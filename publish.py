@@ -11,7 +11,7 @@ c = writeas.client()
 c.setToken(token)
 
 # Extract body
-body = sys.argv[0]
+body = sys.argv[1]
 
 post = c.createCPost('actions', body)
 
