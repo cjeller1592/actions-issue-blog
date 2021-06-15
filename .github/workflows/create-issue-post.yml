@@ -1,6 +1,5 @@
 name: Create Write.as blog post from created issue
 on: issues
-  types: [opened]
 
 jobs:
   Create-Blog-Post-From-Issue:
