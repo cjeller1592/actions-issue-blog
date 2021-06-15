@@ -10,12 +10,6 @@ token = os.environ.get('TOKEN')
 c = writeas.client()
 c.setToken(token)
 
-with open('test.md', 'r') as f:
-    lines = f.readlines()
-
-# Extract title
-title = re.sub('\n', '', lines[0].split("# ",1)[1])
-
 # Extract body
 body = sys.argv[0]
 

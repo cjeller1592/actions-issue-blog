@@ -1,6 +1,7 @@
 name: Create Write.as blog post from created issue
 on: issues
-
+env:
+    TOKEN: ${{ secrets.API_TOKEN }}    
 jobs:
   Create-Blog-Post-From-Issue:
     runs-on: ubuntu-latest
